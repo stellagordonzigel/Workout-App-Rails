@@ -13,3 +13,50 @@
  *= require_tree .
  *= require_self
  */
+
+/*.category-image {
+  width: 220px;
+}*/
+
+img {
+  width: 220px;
+}
+
+h4 {
+  font-family: Arial;
+  /*position: relative;*/
+}
+
+a {
+  text-decoration: none;
+}
+
+.workout-category-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  width: 100%;
+  padding-left: 250px;
+  padding-right: 250px;
+}
+
+.workout-category {
+  margin: 20px;
+  position: relative;
+  flex: 1;
+}
+
+.workout-category-text {
+  position: absolute;
+  text-align: center;
+  top: 45%;
+  width: 100%;
+}
+
+/*.category-image {
+  position: relative;
+  flex: 1;
+}*/
