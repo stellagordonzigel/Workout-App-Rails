@@ -55,7 +55,7 @@ h4 {
   color: white;
 }*/
 
-.workout-category-container {
+/*.workout-category-container {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -63,14 +63,19 @@ h4 {
   flex-wrap: wrap;
   box-sizing: border-box;
   width: 100%;
-  padding-left: 250px;
-  padding-right: 250px;
+  padding-left: 200px;
+  padding-right: 200px;
 }
 
 .workout-category {
-  margin: 20px;
+  padding: 10px;
+  height: 100px;
+  margin: 5px;
+  background-color: rgba(100, 100, 255, .8);
+  text-align: center;
   position: relative;
   flex: 1;
+  flex-wrap: wrap;
 }
 
 .workout-category-text-container {
@@ -78,6 +83,43 @@ h4 {
   text-align: center;
   top: 40%;
   width: 90%;
+}
+
+.workout-category-text {
+  text-decoration: none;
+  color: white;
+}*/
+
+.workout-category-container {
+  display: flex;
+  justify-content: center;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.workout-category {
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px;
+}
+
+.category-box {
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+  background-color: rgba(100, 100, 255, .8);
+  position: relative;
+  text-align: center;
+}
+
+.workout-category-text-container {
+  position: absolute;
+  top: 40%;
+  width: 100%;
 }
 
 .workout-category-text {

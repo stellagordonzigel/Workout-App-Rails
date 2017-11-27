@@ -2,6 +2,13 @@
   <h1><%= @category.name %></h1>
 </div>
 
+<div class="edit-category">
+  <%= link_to "Edit Category", edit_category_path %>
+</div>
+
+<div class="delete-category">
+  <%= link_to "Delete Category", category_path(@category), method: :delete, class: "delete" %>
+</div>
 
 <% @category.workouts.each do |workout| %>
   <div class="workout-name">
