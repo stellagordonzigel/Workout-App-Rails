@@ -1,0 +1,10 @@
+<div class="category-header">
+  <h1><%= @category.name %></h1>
+</div>
+
+
+<% @category.workouts.each do |workout| %>
+  <div class="workout-name">
+    <h3><%= link_to workout.name, workout_path %></h3>
+  </div>
+<% end %>

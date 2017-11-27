@@ -18,18 +18,42 @@
   width: 220px;
 }*/
 
-img {
-  width: 220px;
+html {
+  background: url('https://media.glamour.com/photos/5695994893ef4b09520d5b6b/master/w_644,c_limit/health-fitness-2015-08-victorias-secret-bra-main.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  /*-webkit-filter: grayscale(100%);
+  filter: grayscale(100%);*/
 }
+
+/*html {
+  background: url(https://media.glamour.com/photos/5695994893ef4b09520d5b6b/master/w_644,c_limit/health-fitness-2015-08-victorias-secret-bra-main.jpg);
+  -moz-filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+  -o-filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+  -webkit-filter: grayscale(100%);
+  filter: gray;
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+}*/
+
+
+/*img {
+  width: 220px;
+  height: 220px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}*/
 
 h4 {
   font-family: Arial;
-  /*position: relative;*/
 }
 
-a {
+/*a {
   text-decoration: none;
-}
+  color: white;
+}*/
 
 .workout-category-container {
   display: flex;
@@ -49,14 +73,14 @@ a {
   flex: 1;
 }
 
-.workout-category-text {
+.workout-category-text-container {
   position: absolute;
   text-align: center;
-  top: 45%;
-  width: 100%;
+  top: 40%;
+  width: 90%;
 }
 
-/*.category-image {
-  position: relative;
-  flex: 1;
-}*/
+.workout-category-text {
+  text-decoration: none;
+  color: white;
+}

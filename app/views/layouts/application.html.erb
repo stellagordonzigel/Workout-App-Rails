@@ -9,6 +9,10 @@
   </head>
 
   <body>
+    <nav>
+      <h1>Workout App</h1>
+      <h2><%= link_to "Categories", categories_path %> | <%= link_to "Workouts", workouts_path %></h2>
+    </nav>
     <%= yield %>
   </body>
 </html>
