@@ -11,7 +11,7 @@ Workout.destroy_all
 Category.destroy_all
 
 abs = Category.create(name: "Abs")
-strenght = Category.create(name: "Strength")
+strength = Category.create(name: "Strength")
 flexibility = Category.create(name: "Flexibility")
 cardio = Category.create(name: "Cardio")
 time_crunch = Category.create(name: "Time Crunch")
