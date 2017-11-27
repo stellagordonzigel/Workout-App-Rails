@@ -1,0 +1,21 @@
+<%= form_for [@category, @workout] do |f| %>
+  <%= f.label :name, "Name:" %>
+  <%= f.text_field :name %>
+
+  <%= f.label :level, "Level:" %>
+  <%= f.text_field :level %>
+
+  <%= f.label :equipment_needed, "Equipment Needed:" %>
+  <%= f.text_field :equipment_needed %>
+
+  <%= f.label :source, "Source:" %>
+  <%= f.text_field :source %>
+
+  <%= f.label :description, "Brief Description:" %>
+  <%= f.text_field :description %>
+
+  <%= f.label :content, "Content:" %>
+  <%= f.text_field :content %>
+
+  <%= f.submit %>
+<% end %>

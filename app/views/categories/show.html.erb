@@ -10,8 +10,12 @@
   <%= link_to "Delete Category", category_path(@category), method: :delete, class: "delete" %>
 </div>
 
-<% @category.workouts.each do |workout| %>
+<div class="new-workout">
+  <%= link_to "New Workout (+)", new_category_workout_path(@category, @workout) %>
+</div>
+
+<% @category.workouts.all.each do |workout| %>
   <div class="workout-name">
-    <h3><%= link_to workout.name, workout_path %></h3>
+    <h3><%= link_to workout.name, category_workout_path(@category, workout) %></h3>
   </div>
 <% end %>

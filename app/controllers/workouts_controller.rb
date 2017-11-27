@@ -1,19 +1,17 @@
 class WorkoutsController < ApplicationController
 
-  def index
-    @workouts = Workout.all
+  def new
+    @category = Category.find(params[:category_id])
+    @workout = Workout.new
   end
 
   def show
     @workout = Workout.find(params[:id])
-  end
-
-  def new
-    @workout = Workout.new
+    @category = Category.find(params[:category_id])
   end
 
   def create
-    @category = Category.all
+    @category = Category.find(params[:category_id])
     @workout = @category.workouts.create(workout_params)
 
     redirect_to category_path(@category)

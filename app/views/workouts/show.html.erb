@@ -1,3 +1,14 @@
+<div class="edit-workout">
+  <%= link_to "Edit #{@workout.name}", edit_category_workout_path(@category, @workout) %>
+</div>
+
+<div class="delete-workout">
+  <%= link_to "Delete #{@workout.name}", category_workout_path(@category, @workout), method: :delete %>
+</div>
+
+<%= link_to "Back to #{@category.name}", category_path(@category) %>
+
+
 <h1><%= @workout.name %></h1>
 <img><%= @workout.img_url %></img>
 <h3><%= @workout.duration %></h3>
