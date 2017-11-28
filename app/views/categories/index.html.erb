@@ -1,29 +1,19 @@
-<div class="new-category">
+<% if !current_user %>
+  <div class="new-category">
+    <% link_to "Create New Category", new_category_path %>
+  </div>
+<% else %>
   <%= link_to "Create New Category", new_category_path %>
-</div>
+<% end %>
 
 <div class="workout-category-container">
   <% @categories.each do |category| %>
 
-    <div class="workout-category">
-
-      <!-- <div class="workout-category-text-container">
-          <h4 class="workout-category-text">
-            <%= link_to category.name, category_path(category) %>
-          </h4>
-      </div> -->
-
-
       <div class="category-box">
         <div class="workout-category-text-container">
-          <p class="workout-category-text">
-            <%= link_to category.name, category_path(category) %>
-          </p>
+            <%= link_to category.name, category_path(category), class: "workout-category-text" %>
         </div>
-
-        <img src="<%= category.img_url %>" alt="">
       </div>
 
-    </div>
   <% end %>
 </div>

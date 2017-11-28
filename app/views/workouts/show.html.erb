@@ -8,13 +8,19 @@
 
 <%= link_to "Back to #{@category.name}", category_path(@category) %>
 
+<div class="workout">
+  <div class="workout-info">
+    <h1><%= @workout.name %></h1>
+    <h4><%= @workout.description %></h4>
+    <!-- <img src="<%= @workout.img_url %>" alt="<%= "#{@workout.name} image" %>"> -->
+    <h3><%= @workout.duration %> | <%= @workout.level %></h3>
+    <h3>Equipment Needed: <%= @workout.equipment_needed %></h3>
+    <h3>Source: <%= @workout.source %></h3>
+    <p><%= @workout.category.name %></p>
+  </div>
 
-<h1><%= @workout.name %></h1>
-<img><%= @workout.img_url %></img>
-<h3><%= @workout.duration %></h3>
-<h3><%= @workout.level %></h3>
-<h3><%= @workout.equipment_needed %></h3>
-<h4><%= @workout.source %></h4>
-<h4><%= @workout.description %></h4>
-<p><%= @workout.content %></p>
-<p><%= @workout.category.name %></p>
+  <div class="workout-content">
+    <%= simple_format(@workout.content) %>
+  </div>
+
+</div>

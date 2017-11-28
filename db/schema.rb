@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171127164427) do
+ActiveRecord::Schema.define(version: 20171128190503) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -20,6 +20,18 @@ ActiveRecord::Schema.define(version: 20171127164427) do
     t.string "img_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "entries", force: :cascade do |t|
+    t.string "duration"
+    t.string "date"
+    t.string "comments"
+    t.bigint "user_id", null: false
+    t.bigint "workout_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_entries_on_user_id"
+    t.index ["workout_id"], name: "index_entries_on_workout_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -54,5 +66,7 @@ ActiveRecord::Schema.define(version: 20171127164427) do
     t.index ["category_id"], name: "index_workouts_on_category_id"
   end
 
+  add_foreign_key "entries", "users"
+  add_foreign_key "entries", "workouts"
   add_foreign_key "workouts", "categories"
 end

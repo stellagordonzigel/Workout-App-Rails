@@ -15,7 +15,10 @@
   <%= f.text_field :description %>
 
   <%= f.label :content, "Content:" %>
-  <%= f.text_field :content %>
+  <%= f.text_area :content %>
+
+  <%= f.label :img_url, "Video URL:" %>
+  <%= f.text_field :img_url %>
 
   <%= f.submit %>
 <% end %>
