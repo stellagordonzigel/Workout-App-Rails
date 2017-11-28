@@ -12,11 +12,11 @@
   <div class="workout-info">
     <h1><%= @workout.name %></h1>
     <h4><%= @workout.description %></h4>
-    <!-- <img src="<%= @workout.img_url %>" alt="<%= "#{@workout.name} image" %>"> -->
     <h3><%= @workout.duration %> | <%= @workout.level %></h3>
     <h3>Equipment Needed: <%= @workout.equipment_needed %></h3>
     <h3>Source: <%= @workout.source %></h3>
     <p><%= @workout.category.name %></p>
+    <%= button_to "Track This Workout!", new_workout_entry_path(@workout), method: :get %>
   </div>
 
   <div class="workout-content">

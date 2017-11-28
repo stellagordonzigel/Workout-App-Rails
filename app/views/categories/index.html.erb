@@ -1,18 +1,15 @@
-<% if !current_user %>
+<% if current_user %>
   <div class="new-category">
-    <% link_to "Create New Category", new_category_path %>
+    <%= link_to "Create New Category", new_category_path %>
   </div>
-<% else %>
-  <%= link_to "Create New Category", new_category_path %>
 <% end %>
 
-<% if !current_user %>
+<% if current_user %>
   <div class="show-workouts">
-    <% link_to "Show My Workouts", entries_path %>
-  </div>
-<% else %>
-  <%= link_to "Show My Workouts", entries_path %>
+    <%= link_to "Show My Workouts", entries_path %>
 <% end %>
+
+
 
 <div class="workout-category-container">
   <% @categories.each do |category| %>

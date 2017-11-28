@@ -6,7 +6,10 @@ Rails.application.routes.draw do
     resources :workouts
   end
 
-  resources :users
-  resources :entries
+  resources :workouts do
+    resources :entries
+  end
+
+  get 'entries' => 'entries#index', as: :entries
 
 end

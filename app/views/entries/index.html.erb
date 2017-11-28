@@ -1,5 +1,4 @@
 <div class="workout-entry-container">
-
   <% @user.entries.each do |entry| %>
     <%= entry.workout.name %> |
     <%= entry.workout.category.name %> |
@@ -7,5 +6,4 @@
     <%= entry.date %> |
     <%= entry.comments %>
   <% end %>
-
 </div>
