@@ -5,4 +5,8 @@ Rails.application.routes.draw do
   resources :categories do
     resources :workouts
   end
+
+  resources :users
+  resources :entries
+
 end

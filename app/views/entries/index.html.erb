@@ -1,0 +1,11 @@
+<div class="workout-entry-container">
+
+  <% @user.entries.each do |entry| %>
+    <%= entry.workout.name %> |
+    <%= entry.workout.category.name %> |
+    <%= entry.duration %> |
+    <%= entry.date %> |
+    <%= entry.comments %>
+  <% end %>
+
+</div>
