@@ -19,6 +19,7 @@
           <%= link_to "Sign up | ", new_user_registration_path, class: "nav-text" %>
           <%= link_to "Sign in", new_user_session_path, class: "nav-text" %>
         <% else %>
+          <%= link_to "Show My Workouts |", entries_path, class: "nav-text" %>
           <span class="nav-text"><%= current_user.email %></span>
           <%= link_to " | Sign out", destroy_user_session_path, :method => :delete, class: "nav-text" %>
         <% end %>
