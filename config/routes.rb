@@ -11,5 +11,6 @@ Rails.application.routes.draw do
   end
 
   get 'entries' => 'entries#index', as: :entries
+  # get '/entries/:id/edit(.:format)' => 'entries#edit', as: :edit_entry
 
 end

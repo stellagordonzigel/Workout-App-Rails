@@ -1,0 +1,10 @@
+<h1>test</h1>
+
+
+<%= link_to "(edit)", edit_workout_entry_path(@workout, @entry) %>
+
+<%= @entry.workout.name %> |
+<%= @entry.workout.category.name %> |
+<%= @entry.duration %> |
+<%= @entry.date %> |
+<%= @entry.comments %>
