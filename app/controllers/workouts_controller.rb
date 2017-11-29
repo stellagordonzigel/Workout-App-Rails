@@ -6,7 +6,6 @@ class WorkoutsController < ApplicationController
   end
 
   def show
-    @user = current_user
     @workout = Workout.find(params[:id])
     @category = Category.find(params[:category_id])
   end

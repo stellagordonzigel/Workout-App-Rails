@@ -26,14 +26,16 @@
 
 
 <div class="specific-workout-entries">
-  <% @user.workouts.entries.each do |entry| %>
-    <%= link_to "(edit)", edit_workout_entry_path(@workout, entry) %>
-    <%= link_to "(delete)", workout_entry_path(@workout, entry), method: :delete %>
-    <%= entry.workout.name %> |
-    <%= entry.workout.category.name %> |
-    <%= entry.duration %> |
-    <%= entry.date %> |
-    <%= entry.comments %>
-    <br>
+  <% @workout.entries.each do |entry| %>
+    <% if entry.user == current_user %>
+      <%= link_to "(edit)", edit_workout_entry_path(@workout, entry) %>
+      <%= link_to "(delete)", workout_entry_path(@workout, entry), method: :delete %>
+      <%= entry.workout.name %> |
+      <%= entry.workout.category.name %> |
+      <%= entry.duration %> |
+      <%= entry.date %> |
+      <%= entry.comments %>
+      <br>
+      <% end %>
   <% end %>
 </div>
