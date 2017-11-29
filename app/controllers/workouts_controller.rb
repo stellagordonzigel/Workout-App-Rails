@@ -6,6 +6,7 @@ class WorkoutsController < ApplicationController
   end
 
   def show
+    @user = current_user
     @workout = Workout.find(params[:id])
     @category = Category.find(params[:category_id])
   end
@@ -39,7 +40,7 @@ class WorkoutsController < ApplicationController
   end
 
   private
-  def workout_params
-    params.require(:workout).permit(:name, :duration, :level, :equipment_needed, :source, :description, :content, :img_url, :category)
-  end
+    def workout_params
+      params.require(:workout).permit(:name, :duration, :level, :equipment_needed, :source, :description, :video_url, :content, :img_url, :category)
+    end
 end

@@ -34,7 +34,7 @@ class EntriesController < ApplicationController
     @workout = Workout.find(params[:workout_id])
     @entry = Entry.find(params[:id])
     @entry.update(entry_params.merge(user: current_user))
-    
+
     redirect_to workout_entry_path, notice: "#{@entry.workout.name} was successfully updated on #{@entry.updated_at}"
   end
 

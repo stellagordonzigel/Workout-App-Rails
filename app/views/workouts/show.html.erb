@@ -24,10 +24,11 @@
   </div>
 </div>
 
+
 <div class="specific-workout-entries">
-  <% @workout.entries.all.each do |entry| %>
-  <%= link_to "(edit)", edit_workout_entry_path(@workout, entry) %>
-  <%= link_to "(delete)", workout_entry_path(@workout, entry), method: :delete %>
+  <% @user.workouts.entries.each do |entry| %>
+    <%= link_to "(edit)", edit_workout_entry_path(@workout, entry) %>
+    <%= link_to "(delete)", workout_entry_path(@workout, entry), method: :delete %>
     <%= entry.workout.name %> |
     <%= entry.workout.category.name %> |
     <%= entry.duration %> |
