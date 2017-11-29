@@ -104,3 +104,9 @@ img {
   width: 65%;
   justify-content: flex-end;
 }
+
+.specific-workout-entries {
+  border-radius: 5px;
+  background-color: rgba(150, 150, 150, .8);
+  width: 90%;
+}

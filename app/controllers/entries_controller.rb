@@ -18,8 +18,11 @@ class EntriesController < ApplicationController
   def create
     @workout = Workout.find(params[:workout_id])
     @entry = @workout.entries.create(entry_params.merge(user: current_user))
-
-    redirect_to entries_path
+    if @entry.save
+      redirect_to entries_path, notice: "#{@entry.workout.name} was successfully logged on #{@entry.created_at}"
+    else
+      render :new
+    end
   end
 
   def edit
@@ -31,8 +34,8 @@ class EntriesController < ApplicationController
     @workout = Workout.find(params[:workout_id])
     @entry = Entry.find(params[:id])
     @entry.update(entry_params.merge(user: current_user))
-
-    redirect_to workout_entry_path
+    
+    redirect_to workout_entry_path, notice: "#{@entry.workout.name} was successfully updated on #{@entry.updated_at}"
   end
 
   def show

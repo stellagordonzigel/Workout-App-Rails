@@ -1,5 +1,8 @@
 <div class="workout-entry-container">
 
+  <% flash.each do |type, message| %>
+  <% end %>
+
   <% @user.entries.each do |entry| %>
     <%= entry.workout.name %> |
     <%= entry.workout.category.name %> |
