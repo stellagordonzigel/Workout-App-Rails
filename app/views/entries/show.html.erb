@@ -1,10 +1,21 @@
-<h1>test</h1>
+<div class="category-header-container">
+  <div class="category-header">
+    <h1 class="category-header-text"><%= "#{@workout.category.name} Tracked Workouts" %></h1>
+  </div>
+</div>
 
 
-<%= link_to "(edit)", edit_workout_entry_path(@workout, @entry) %>
+<div class="workout-entries-container">
+  <div class="workout-entries-box">
 
-<%= @entry.workout.name %> |
-<%= @entry.workout.category.name %> |
-<%= @entry.duration %> |
-<%= @entry.date %> |
-<%= @entry.comments %>
+    <%= link_to edit_workout_entry_path(@workout, @entry) do %>
+      <i class="fa fa-pencil" aria-hidden="true"></i>
+    <% end %>
+
+    <%= @entry.workout.name %> |
+    <%= @entry.workout.category.name %> |
+    <%= @entry.duration %> |
+    <%= @entry.date %> |
+    <%= @entry.comments %>
+  </div>
+</div>

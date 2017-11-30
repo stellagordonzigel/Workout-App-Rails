@@ -114,51 +114,61 @@ abs_workout_two = Workout.create(
 
 abs_workout_three = Workout.create(
   name: "Abs Workout Three",
+  duration: "20 mins",
   category: abs
 )
 
 abs_workout_four = Workout.create(
   name: "Abs Workout Four",
+  duration: "15 mins",
   category: abs
 )
 
 abs_workout_five = Workout.create(
   name: "Abs Workout Five",
+  duration: "7 mins",
   category: abs
 )
 
 abs_workout_six = Workout.create(
   name: "Abs Workout Six",
+  duration: "15 mins",
   category: abs
 )
 
 abs_workout_seven = Workout.create(
   name: "Abs Workout Seven",
+  duration: "30 mins",
   category: abs
 )
 
 abs_workout_eight = Workout.create(
   name: "Abs Workout Eight",
+  duration: "10 mins",
   category: abs
 )
 
 abs_workout_nine = Workout.create(
   name: "Abs Workout Nine",
+  duration: "25 mins",
   category: abs
 )
 
 abs_workout_ten = Workout.create(
   name: "Abs Workout Ten",
+  duration: "12 mins",
   category: abs
 )
 
 abs_workout_eleven = Workout.create(
   name: "Abs Workout Eleven",
+  duration: "20 mins",
   category: abs
 )
 
 abs_workout_twelve = Workout.create(
   name: "Abs Workout Twelve",
+  duration: "15 mins",
   category: abs
 )
 
@@ -203,56 +213,67 @@ strength_workout_one = Workout.create(
 
 strength_workout_two = Workout.create(
   name: "Strength Workout Two",
+  duration: "15 mins",
   category: strength
 )
 
 strength_workout_three = Workout.create(
   name: "Strength Workout Three",
+  duration: "15 mins",
   category: strength
 )
 
 strength_workout_four = Workout.create(
   name: "Strength Workout Four",
+  duration: "15 mins",
   category: strength
 )
 
 strength_workout_five = Workout.create(
   name: "Strength Workout Five",
+  duration: "15 mins",
   category: strength
 )
 
 strength_workout_six = Workout.create(
   name: "Strength Workout Six",
+  duration: "15 mins",
   category: strength
 )
 
 strength_workout_seven = Workout.create(
   name: "Strength Workout Seven",
+  duration: "15 mins",
   category: strength
 )
 
 strength_workout_eight = Workout.create(
   name: "Strength Workout Eight",
+  duration: "15 mins",
   category: strength
 )
 
 strength_workout_nine = Workout.create(
   name: "Strength Workout Nine",
+  duration: "15 mins",
   category: strength
 )
 
 strength_workout_ten = Workout.create(
   name: "Strength Workout Ten",
+  duration: "15 mins",
   category: strength
 )
 
 strength_workout_eleven = Workout.create(
   name: "Strength Workout Eleven",
+  duration: "15 mins",
   category: strength
 )
 
 strength_workout_twelve = Workout.create(
   name: "Strength Workout Twelve",
+  duration: "15 mins",
   category: strength
 )
 
@@ -275,59 +296,375 @@ flexibility_workout_one = Workout.create(
 
 flexibility_workout_two = Workout.create(
   name: "Flexibility Workout Two",
+  duration: "15 mins",
   category: flexibility
 )
 
 flexibility_workout_three = Workout.create(
   name: "Flexibility Workout Three",
+  duration: "15 mins",
   category: flexibility
 )
 
 flexibility_workout_four = Workout.create(
   name: "Flexibility Workout Four",
+  duration: "15 mins",
   category: flexibility
 )
 
 flexibility_workout_five = Workout.create(
   name: "Flexibility Workout Five",
+  duration: "15 mins",
   category: flexibility
 )
 
 flexibility_workout_six = Workout.create(
   name: "Flexibility Workout Six",
+  duration: "15 mins",
   category: flexibility
 )
 
 flexibility_workout_seven = Workout.create(
   name: "Flexibility Workout Seven",
+  duration: "15 mins",
   category: flexibility
 )
 
 flexibility_workout_eight = Workout.create(
   name: "Flexibility Workout Eight",
+  duration: "15 mins",
   category: flexibility
 )
 
 flexibility_workout_nine = Workout.create(
   name: "Flexibility Workout Nine",
+  duration: "15 mins",
   category: flexibility
 )
 
 flexibility_workout_ten = Workout.create(
   name: "Flexibility Workout Ten",
+  duration: "15 mins",
   category: flexibility
 )
 
 flexibility_workout_eleven = Workout.create(
   name: "Flexibility Workout Eleven",
+  duration: "15 mins",
   category: flexibility
 )
 
 flexibility_workout_twelve = Workout.create(
   name: "Flexibility Workout Twelve",
+  duration: "15 mins",
   category: flexibility
 )
 
+cardio_workout_one = Workout.create(
+  name: "Cardio Workout One",
+  duration: "15 mins",
+  level: "Beginner",
+  equipment_needed: "None",
+  source: "Nike",
+  description: "Core Conditioning, Lower Body Endurance. Single leg and arm movements are great for improving strength and balance. Go as far as you can with good control.",
+  content:
+    "WARM-UP:
+    0:30 - Hip Lifts
+    0:30 - Bird Dogs (Alternating)
+    0:30 - Hip Lifts
+    0:30 - Bird Dogs (Alternating)
+    CORE:
+    0:30 - Boat to Low Boat
+    0:30 - Plank Walk
+    0:30 - Pendulum Legs
+    0:30 - Hip Lift March (Alternating)
+    1:00 - Bear Crawl (Forward and Back)
+    0:30 - Side Plank Knee Drives (Left Side)
+
+    0:30 - Side Plank Knee Drives (Right Side)
+    0:40 - Boat to Low Boat
+    0:30 - Plank Walk
+    0:30 - Pendulum Legs
+    0:30 - Hip Lift March (Alternating)
+    1:00 - Bear Crawl (Forward and Back)
+    0:30 - Side Plank Knee Drives (Left Side)
+    0:30 - Side Plank Knee Drives (Right Side)
+    COOL-DOWN:
+    0:30 - Quad Rockers
+    0:30 - Lower Back Stretch (Left Side)
+    0:30 - Lower Back Stretch (Right Side)",
+  category: cardio
+)
+
+cardio_workout_two = Workout.create(
+  name: "Cardio Workout Two",
+  duration: "15 mins",
+  category: cardio
+)
+
+cardio_workout_twelve = Workout.create(
+  name: "Cardio Workout Three",
+  duration: "15 mins",
+  category: cardio
+)
+
+cardio_workout_four = Workout.create(
+  name: "Cardio Workout Four",
+  duration: "15 mins",
+  category: cardio
+)
+
+cardio_workout_five = Workout.create(
+  name: "Cardio Workout Five",
+  duration: "15 mins",
+  category: cardio
+)
+
+cardio_workout_six = Workout.create(
+  name: "Cardio Workout Six",
+  duration: "15 mins",
+  category: cardio
+)
+
+cardio_workout_seven = Workout.create(
+  name: "Cardio Workout Seven",
+  duration: "15 mins",
+  category: cardio
+)
+
+cardio_workout_eight = Workout.create(
+  name: "Cardio Workout Eight",
+  duration: "15 mins",
+  category: cardio
+)
+
+cardio_workout_nine = Workout.create(
+  name: "Cardio Workout Nine",
+  duration: "15 mins",
+  category: cardio
+)
+
+cardio_workout_ten = Workout.create(
+  name: "Cardio Workout Ten",
+  duration: "15 mins",
+  category: cardio
+)
+
+cardio_workout_eleven = Workout.create(
+  name: "Cardio Workout Eleven",
+  duration: "15 mins",
+  category: cardio
+)
+
+cardio_workout_twelve = Workout.create(
+  name: "Cardio Workout Twelve",
+  duration: "15 mins",
+  category: cardio
+)
+
+time_crunch_workout_one = Workout.create(
+  name: "Time Crunch Workout One",
+  duration: "15 mins",
+  level: "Beginner",
+  equipment_needed: "None",
+  source: "Nike",
+  description: "Core Conditioning, Lower Body Endurance. Single leg and arm movements are great for improving strength and balance. Go as far as you can with good control.",
+  content:
+    "WARM-UP:
+    0:30 - Hip Lifts
+    0:30 - Bird Dogs (Alternating)
+    0:30 - Hip Lifts
+    0:30 - Bird Dogs (Alternating)
+    CORE:
+    0:30 - Boat to Low Boat
+    0:30 - Plank Walk
+    0:30 - Pendulum Legs
+    0:30 - Hip Lift March (Alternating)
+    1:00 - Bear Crawl (Forward and Back)
+    0:30 - Side Plank Knee Drives (Left Side)
+
+    0:30 - Side Plank Knee Drives (Right Side)
+    0:40 - Boat to Low Boat
+    0:30 - Plank Walk
+    0:30 - Pendulum Legs
+    0:30 - Hip Lift March (Alternating)
+    1:00 - Bear Crawl (Forward and Back)
+    0:30 - Side Plank Knee Drives (Left Side)
+    0:30 - Side Plank Knee Drives (Right Side)
+    COOL-DOWN:
+    0:30 - Quad Rockers
+    0:30 - Lower Back Stretch (Left Side)
+    0:30 - Lower Back Stretch (Right Side)",
+  category: time_crunch
+)
+
+time_crunch_workout_two = Workout.create(
+  name: "Time Crunch Workout Two",
+  duration: "15 mins",
+  category: time_crunch
+)
+
+time_crunch_workout_three = Workout.create(
+  name: "Time Crunch Workout Three",
+  duration: "15 mins",
+  category: time_crunch
+)
+
+time_crunch_workout_four = Workout.create(
+  name: "Time Crunch Workout Four",
+  duration: "15 mins",
+  category: time_crunch
+)
+
+time_crunch_workout_Five = Workout.create(
+  name: "Time Crunch Workout Five",
+  duration: "15 mins",
+  category: time_crunch
+)
+
+time_crunch_workout_six = Workout.create(
+  name: "Time Crunch Workout Six",
+  duration: "15 mins",
+  category: time_crunch
+)
+
+time_crunch_workout_seven = Workout.create(
+  name: "Time Crunch Workout Seven",
+  duration: "15 mins",
+  category: time_crunch
+)
+
+time_crunch_workout_eight = Workout.create(
+  name: "Time Crunch Workout Eight",
+  duration: "15 mins",
+  category: time_crunch
+)
+
+time_crunch_workout_nine = Workout.create(
+  name: "Time Crunch Workout Nine",
+  duration: "15 mins",
+  category: time_crunch
+)
+
+time_crunch_workout_ten = Workout.create(
+  name: "Time Crunch Workout Ten",
+  duration: "15 mins",
+  category: time_crunch
+)
+
+time_crunch_workout_eleven = Workout.create(
+  name: "Time Crunch Workout Eleven",
+  duration: "15 mins",
+  category: time_crunch
+)
+
+time_crunch_workout_twelve = Workout.create(
+  name: "Time Crunch Workout Twelve",
+  duration: "15 mins",
+  category: time_crunch
+)
+
+no_equipment_workout_one = Workout.create(
+  name: "No Equipment Workout One",
+  duration: "15 mins",
+  level: "Beginner",
+  equipment_needed: "None",
+  source: "Nike",
+  description: "Core Conditioning, Lower Body Endurance. Single leg and arm movements are great for improving strength and balance. Go as far as you can with good control.",
+  content:
+    "WARM-UP:
+    0:30 - Hip Lifts
+    0:30 - Bird Dogs (Alternating)
+    0:30 - Hip Lifts
+    0:30 - Bird Dogs (Alternating)
+    CORE:
+    0:30 - Boat to Low Boat
+    0:30 - Plank Walk
+    0:30 - Pendulum Legs
+    0:30 - Hip Lift March (Alternating)
+    1:00 - Bear Crawl (Forward and Back)
+    0:30 - Side Plank Knee Drives (Left Side)
+
+    0:30 - Side Plank Knee Drives (Right Side)
+    0:40 - Boat to Low Boat
+    0:30 - Plank Walk
+    0:30 - Pendulum Legs
+    0:30 - Hip Lift March (Alternating)
+    1:00 - Bear Crawl (Forward and Back)
+    0:30 - Side Plank Knee Drives (Left Side)
+    0:30 - Side Plank Knee Drives (Right Side)
+    COOL-DOWN:
+    0:30 - Quad Rockers
+    0:30 - Lower Back Stretch (Left Side)
+    0:30 - Lower Back Stretch (Right Side)",
+  category: no_equipment_necessary
+)
+
+no_equipment_workout_two = Workout.create(
+  name: "No Equipment Workout Two",
+  duration: "15 mins",
+  category: no_equipment_necessary
+)
+
+no_equipment_workout_three = Workout.create(
+  name: "No Equipment Workout Three",
+  duration: "15 mins",
+  category: no_equipment_necessary
+)
+
+no_equipment_workout_four = Workout.create(
+  name: "No Equipment Workout Four",
+  duration: "15 mins",
+  category: no_equipment_necessary
+)
+
+no_equipment_workout_five = Workout.create(
+  name: "No Equipment Workout Five",
+  duration: "15 mins",
+  category: no_equipment_necessary
+)
+
+no_equipment_workout_six = Workout.create(
+  name: "No Equipment Workout Six",
+  duration: "15 mins",
+  category: no_equipment_necessary
+)
+
+no_equipment_workout_seven = Workout.create(
+  name: "No Equipment Workout Seven",
+  duration: "15 mins",
+  category: no_equipment_necessary
+)
+
+no_equipment_workout_eight = Workout.create(
+  name: "No Equipment Workout Eight",
+  duration: "15 mins",
+  category: no_equipment_necessary
+)
+
+no_equipment_workout_nine = Workout.create(
+  name: "No Equipment Workout Nine",
+  duration: "15 mins",
+  category: no_equipment_necessary
+)
+
+no_equipment_workout_ten = Workout.create(
+  name: "No Equipment Workout Ten",
+  duration: "15 mins",
+  category: no_equipment_necessary
+)
+
+no_equipment_workout_eleven = Workout.create(
+  name: "No Equipment Workout Eleven",
+  duration: "15 mins",
+  category: no_equipment_necessary
+)
+
+no_equipment_workout_twelve = Workout.create(
+  name: "No Equipment Workout Twelve",
+  duration: "15 mins",
+  category: no_equipment_necessary
+)
 
 test_user.entries.create([
   workout: abs_workout_one,

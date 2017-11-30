@@ -1,13 +1,13 @@
 class WorkoutsController < ApplicationController
 
-  def new
-    @category = Category.find(params[:category_id])
-    @workout = Workout.new
-  end
-
   def show
     @workout = Workout.find(params[:id])
     @category = Category.find(params[:category_id])
+  end
+
+  def new
+    @category = Category.find(params[:category_id])
+    @workout = Workout.new
   end
 
   def create
@@ -42,4 +42,4 @@ class WorkoutsController < ApplicationController
     def workout_params
       params.require(:workout).permit(:name, :duration, :level, :equipment_needed, :source, :description, :video_url, :content, :img_url, :category)
     end
-end
+  end

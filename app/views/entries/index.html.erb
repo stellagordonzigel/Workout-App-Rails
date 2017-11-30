@@ -1,15 +1,20 @@
-<div class="workout-entry-container">
 
-  <% flash.each do |type, message| %>
-  <% end %>
+    <% flash.each do |type, message| %>
+    <% end %>
 
-  <% @user.entries.each do |entry| %>
-    <%= entry.workout.name %> |
-    <%= entry.workout.category.name %> |
-    <%= entry.duration %> |
-    <%= entry.date %> |
-    <%= entry.comments %>
-    <br>
-  <% end %>
 
+<div class="workout-entries-container">
+  <div class="workout-entries-box">
+    <div class="workout-entries-header"> All Tracked Workouts </div>
+      <div class="workout-entries-text">
+        <% @user.entries.each do |entry| %>
+          <%= entry.workout.name %> |
+          <%= entry.workout.category.name %> |
+          <%= entry.duration %> |
+          <%= entry.date %> |
+          <%= entry.comments %>
+          <br>
+        <% end %>
+      </div>
+  </div>
 </div>

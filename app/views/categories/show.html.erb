@@ -1,17 +1,7 @@
-<div class="category-header">
-  <h1><%= @category.name %></h1>
-</div>
-
-<div class="edit-category">
-  <%= link_to "Edit Category", edit_category_path %>
-</div>
-
-<div class="delete-category">
-  <%= link_to "Delete Category", category_path(@category), method: :delete, class: "delete" %>
-</div>
-
-<div class="new-workout">
-  <%= link_to "New Workout (+)", new_category_workout_path(@category, @workout) %>
+<div class="category-header-container">
+  <div class="category-header">
+    <h1 class="category-header-text"><%= @category.name %></h1>
+  </div>
 </div>
 
 <div class="workout-name-container">
@@ -19,6 +9,7 @@
     <div class="workout-name-box">
       <div class="workout-name-text-container">
         <h3><%= link_to workout.name, category_workout_path(@category, workout), class: "workout-name-text" %></h3>
+        <%= link_to workout.duration, category_workout_path(@category, workout), class: "workout-name-text" %>
       </div>
     </div>
   <% end %>

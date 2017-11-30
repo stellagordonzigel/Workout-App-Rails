@@ -1,24 +1,19 @@
-<!-- <div class="edit-workout">
-  <%= link_to "Edit #{@workout.name}", edit_category_workout_path(@category, @workout) %>
+<div class="back-nav-container">
+  <div class="back-nav">
+    <%= link_to "Back to #{@category.name}", category_path(@category), class: "back-nav-text" %>
+  </div>
 </div>
 
-<div class="delete-workout">
-  <%= link_to "Delete #{@workout.name}", category_workout_path(@category, @workout), method: :delete %>
-</div> -->
-
-<%= link_to "Back to #{@category.name}", category_path(@category) %>
-
-<div class="test">
 <div class="workout-info-container">
   <div class="workout-info">
     <h1 class="workout-name"><%= @workout.name %></h1>
     <h4 class="workout-description"><%= @workout.description %></h4>
-    <h3 class="duration-level-equipment-source-category">
-      Duration: <%= @workout.duration %> |
-      Level: <%= @workout.level %> |
-      Equipment Needed: <%= @workout.equipment_needed %> |
-      Source: <%= @workout.source %> |
-      Category: <%= @workout.category.name %>
+    <h3 class="duration-level-equipment-source-category-data">
+      <span class="duration-level-equipment-source-category">Duration:</span> <%= @workout.duration %> |
+      <span class="duration-level-equipment-source-category">Level:</span> <%= @workout.level %> |
+      <span class="duration-level-equipment-source-category">Equipment Needed:</span> <%= @workout.equipment_needed %> |
+      <span class="duration-level-equipment-source-category">Source:</span> <%= @workout.source %> |
+      <span class="duration-level-equipment-source-category">Category:</span> <%= @workout.category.name %>
     </h3>
     <%= button_to "Track This Workout!", new_workout_entry_path(@workout), method: :get %>
   </div>
@@ -32,13 +27,19 @@
 
 <div class="workout-entries-container">
   <div class="workout-entries-box">
-    <span class="workout-entries-header"><%= "#{@workout.name} Entries" %></span>
-    <br>
+    <div class="workout-entries-header"><%= "#{@workout.name} Entries" %></div>
     <div class="workout-entries-text">
       <% @workout.entries.each do |entry| %>
         <% if entry.user == current_user %>
-          <%= link_to "(edit)", edit_workout_entry_path(@workout, entry) %>
-          <%= link_to "(delete)", workout_entry_path(@workout, entry), method: :delete %>
+
+            <%= link_to edit_workout_entry_path(@workout, entry) do %>
+              <i class="fa fa-pencil" aria-hidden="true"></i>
+            <% end %>
+
+            <%= link_to workout_entry_path(@workout, entry), method: :delete do %>
+              <i class="fa fa-trash-o" aria-hidden="true"></i>
+            <% end %>
+
           <%= entry.workout.name %> |
           <%= entry.workout.category.name %> |
           <%= entry.duration %> |
@@ -49,5 +50,4 @@
       <% end %>
     </div>
   </div>
-</div>
 </div>
