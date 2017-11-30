@@ -1,41 +1,53 @@
-<div class="edit-workout">
+<!-- <div class="edit-workout">
   <%= link_to "Edit #{@workout.name}", edit_category_workout_path(@category, @workout) %>
 </div>
 
 <div class="delete-workout">
   <%= link_to "Delete #{@workout.name}", category_workout_path(@category, @workout), method: :delete %>
-</div>
+</div> -->
 
 <%= link_to "Back to #{@category.name}", category_path(@category) %>
 
-<div class="workout">
+<div class="test">
+<div class="workout-info-container">
   <div class="workout-info">
-    <h1><%= @workout.name %></h1>
-    <h4><%= @workout.description %></h4>
-    <h3><%= @workout.duration %> | <%= @workout.level %></h3>
-    <h3>Equipment Needed: <%= @workout.equipment_needed %></h3>
-    <h3>Source: <%= @workout.source %></h3>
-    <p><%= @workout.category.name %></p>
+    <h1 class="workout-name"><%= @workout.name %></h1>
+    <h4 class="workout-description"><%= @workout.description %></h4>
+    <h3 class="duration-level-equipment-source-category">
+      Duration: <%= @workout.duration %> |
+      Level: <%= @workout.level %> |
+      Equipment Needed: <%= @workout.equipment_needed %> |
+      Source: <%= @workout.source %> |
+      Category: <%= @workout.category.name %>
+    </h3>
     <%= button_to "Track This Workout!", new_workout_entry_path(@workout), method: :get %>
   </div>
+</div>
 
+<div class="workout-content-container">
   <div class="workout-content">
     <%= simple_format(@workout.content) %>
   </div>
 </div>
 
-
-<div class="specific-workout-entries">
-  <% @workout.entries.each do |entry| %>
-    <% if entry.user == current_user %>
-      <%= link_to "(edit)", edit_workout_entry_path(@workout, entry) %>
-      <%= link_to "(delete)", workout_entry_path(@workout, entry), method: :delete %>
-      <%= entry.workout.name %> |
-      <%= entry.workout.category.name %> |
-      <%= entry.duration %> |
-      <%= entry.date %> |
-      <%= entry.comments %>
-      <br>
+<div class="workout-entries-container">
+  <div class="workout-entries-box">
+    <span class="workout-entries-header"><%= "#{@workout.name} Entries" %></span>
+    <br>
+    <div class="workout-entries-text">
+      <% @workout.entries.each do |entry| %>
+        <% if entry.user == current_user %>
+          <%= link_to "(edit)", edit_workout_entry_path(@workout, entry) %>
+          <%= link_to "(delete)", workout_entry_path(@workout, entry), method: :delete %>
+          <%= entry.workout.name %> |
+          <%= entry.workout.category.name %> |
+          <%= entry.duration %> |
+          <%= entry.date %> |
+          <%= entry.comments %>
+          <br>
+        <% end %>
       <% end %>
-  <% end %>
+    </div>
+  </div>
+</div>
 </div>

@@ -5,13 +5,13 @@
 <%= form_for [@workout, @entry] do |f| %>
   <%= f.label :duration, "Duration: " %>
   <%= f.text_field :duration %>
-
+  <br>
   <%= f.label :date, "Date: " %>
   <%= f.text_field :date %>
-
+  <br>
   <%= f.label :comments, "Comments: " %>
   <%= f.text_area :comments %>
-
+  <br>
   <%= f.submit %>
 
 <% end %>

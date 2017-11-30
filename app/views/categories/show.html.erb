@@ -14,8 +14,12 @@
   <%= link_to "New Workout (+)", new_category_workout_path(@category, @workout) %>
 </div>
 
-<% @category.workouts.all.each do |workout| %>
-  <div class="workout-name">
-    <h3><%= link_to workout.name, category_workout_path(@category, workout) %></h3>
-  </div>
-<% end %>
+<div class="workout-name-container">
+  <% @category.workouts.all.each do |workout| %>
+    <div class="workout-name-box">
+      <div class="workout-name-text-container">
+        <h3><%= link_to workout.name, category_workout_path(@category, workout), class: "workout-name-text" %></h3>
+      </div>
+    </div>
+  <% end %>
+</div>

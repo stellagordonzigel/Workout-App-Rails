@@ -36,6 +36,26 @@ img {
   width: 220px;
 }
 
+/*layout/application.erb page*/
+.nav-text, .app-title {
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  justify-content: flex-end;
+}
+
+/*.app-title {
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  justify-content: flex-start;
+}*/
+
+/*category index page*/
 .workout-category-container {
   display: flex;
   justify-content: center;
@@ -43,7 +63,6 @@ img {
   padding-right: 200px;
   flex-flow: row wrap;
 }
-
 
 .category-box {
   width: 300px;
@@ -69,45 +88,131 @@ img {
   font-weight: bold;
 }
 
-.nav-text, .app-title {
-  font-family: 'Poppins', sans-serif;
-  text-decoration: none;
-  color: white;
-  font-size: 18px;
-  font-weight: bold;
-  justify-content: flex-end;
+/*category show page*/
+.workout-name-container {
+  display: flex;
+  justify-content: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  flex-flow: row wrap;
 }
 
-/*.app-title {
-  font-family: 'Poppins', sans-serif;
-  text-decoration: none;
-  color: white;
-  font-size: 18px;
-  font-weight: bold;
-  justify-content: flex-start;
-}*/
+.workout-name-box {
+  width: 250px;
+  height: 250px;
+  border-radius: 5px;
+  background-color: rgba(100, 100, 255, .6);
+  position: relative;
+  text-align: center;
+  margin: 10px;
+}
 
-.workout {
+.workout-name-text-container {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+}
+
+.workout-name-text {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-size: 24;
+  text-decoration: none;
+}
+
+/*workouts show page*/
+.test {
+  border-radius: 5px;
+  background-color: rgba(100, 100, 255, .8);
+}
+
+.workout-info-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .workout-info {
   border-radius: 5px;
-  background-color: rgba(150, 150, 150, .8);
-  width: 30%;
-  justify-content: flex-start;
+  /*background-color: rgba(100, 100, 255, .8);*/
+  width: 100%;
+  text-align: center;
+}
+
+.workout-name {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-size: 28px;
+}
+
+.workout-description {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-size: 16px;
+  font-style: italic;
+}
+
+.duration-level-equipment-source-category {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-size: 16px;
+}
+
+.workout-content-container {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
 }
 
 .workout-content {
   border-radius: 5px;
-  background-color: rgba(150, 150, 150, .8);
-  width: 65%;
-  justify-content: flex-end;
+  /*background-color: rgba(100, 100, 255, .8);*/
+  width: 50%;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
 }
 
-.specific-workout-entries {
+.workout-entries-container {
+  display: flex;
+  justify-content: center;
+}
+
+.workout-entries-box {
   border-radius: 5px;
-  background-color: rgba(150, 150, 150, .8);
-  width: 90%;
+  /*background-color: rgba(100, 100, 255, .8);*/
+  width: 50%;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  color: white;
+}
+
+.workout-entries-header {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  color: white;
+  text-align: center;
+}
+
+.workout-entries-text {
+  width: 100%;
+  white-space: wrap;
+  overflow-x: scroll;
+}
+
+/*entry create and update form*/
+.form-container {
+  display: flex;
+  justify-content: center;
+}
+
+.form-info {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  border-radius: 5px;
+  background-color: rgba(100, 100, 255, .8);
+  text-align: center;
+  width: 50%;
 }
