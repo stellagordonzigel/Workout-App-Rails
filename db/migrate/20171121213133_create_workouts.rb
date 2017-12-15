@@ -9,8 +9,7 @@ class CreateWorkouts < ActiveRecord::Migration[5.1]
       t.string :description
       t.string :content
       t.string :img_url
-      t.references :category, foreign_key: true
-
+      t.references :category, foreign_key: true # Good job using foreign key restraints
 
       t.timestamps
     end

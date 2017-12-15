@@ -17,7 +17,7 @@ class EntriesController < ApplicationController
 
   def create
     @workout = Workout.find(params[:workout_id])
-    @entry = @workout.entries.create(entry_params.merge(user: current_user))
+    @entry = @workout.entries.create(entry_params.merge(user: current_user)) # Good job using merge method
     if @entry.save
       redirect_to entries_path, notice: "#{@entry.workout.name} was successfully logged on #{@entry.created_at}"
     else

@@ -9,3 +9,5 @@ class ApplicationController < ActionController::Base
    redirect_to root_url, notice: "That record doesn't exist!"
   end
 end
+# Great job using before_action to authorize users and for writing a custom error
+# I also like how you let users only see index/show pages

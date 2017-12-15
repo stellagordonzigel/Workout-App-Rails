@@ -11,5 +11,5 @@ Rails.application.routes.draw do
   end
 
   get 'entries' => 'entries#index', as: :entries
-
+  # Good job with nested routes and for implementing a custom one for entries.  
 end

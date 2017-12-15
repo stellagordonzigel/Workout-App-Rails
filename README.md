@@ -1,19 +1,8 @@
 # workout-app-rails
 
 ## Description:
-* bMORE FIT allows users to view a library of workouts within several different categories. One logged in a user can track each workout they do and view a list of their tracked workouts across all categories from anywhere on the site.
+* bMORE FIT allows users to view a library of workouts within several different categories. Once logged in a user can track each workout they do and view a list of their tracked workouts across all categories from anywhere on the site.
 * Join the bMORE FIT community [here](https://bmorefit.herokuapp.com/)
-
-## User Stories
-* When I load the application, the categories and navigation bar should be displayed
-    * If I'm not logged in, Sign Up and Sign in should be displayed
-    * If I am logged in, Show My Workouts, my email and Sign Out should be displayed
-* When I click a category, all workouts within that category should be displayed
-* When I click a workout, workout detail, track this workout, workout content, and workout entries header should be displayed (if I am logged in I will be able to see all entries of that workout that I have created and will be able to edit and delete each entry)
-    * When I click track this workout:
-        * If I'm not logged in I will see a log in screen with a message saying I need to be logged in
-        * If I am logged in I will see an entry form
-            * Duration and Date are required fields            
 
 ## Technologies Used:
 * HTML
@@ -24,8 +13,20 @@
 
 ## Installation Instructions:
 * Fork this repository (workout-app-rails)
-* Clone it to your local repository
+* Clone it to your local repository <!-- Also include directions to run seeds and run the rails server -->
 * Open in a text editor of your choice
+
+## User Stories
+* When I open the application, the categories and navigation bar should be displayed
+    * If I'm not logged in, Sign Up and Sign in should be displayed
+    * If I am logged in, Show My Workouts, my email and Sign Out should be displayed
+* When I click a category, all workouts within that category should be displayed
+* When I click a workout, workout detail, track this workout, workout content, and workout entries header should be displayed (if I am logged in I will be able to see all entries of that workout that I have created and will be able to edit and delete each entry)
+    * When I click track this workout:
+        * If I'm not logged in I will see a log in screen with a message saying I need to be logged in
+        * If I am logged in I will see an entry form
+            * Duration and Date are required fields            
+
 
 ## Unsolved Problems:
 * I need to add more seed data so the workout library is complete

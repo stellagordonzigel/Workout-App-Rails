@@ -15,7 +15,7 @@
  */
 
 html {
-  /*background: url('https://media.glamour.com/photos/5695994893ef4b09520d5b6b/master/w_644,c_limit/health-fitness-2015-08-victorias-secret-bra-main.jpg');*/
+  /*background: url('https://media.glamour.com/photos/5695994893ef4b09520d5b6b/master/w_644,c_limit/health-fitness-2015-08-victorias-secret-bra-main.jpg');*/ /* Remove commented out code */
   background: url('https://i.imgur.com/TFO64NY.jpg');
 }
 
@@ -36,6 +36,9 @@ a {
   text-decoration: none;
 }
 
+/*One thing you could do is to break up your CSS into different files instead of having one file. */
+/*If you do use commented headings, I'd make them more obvious/BIG like this*/
+/******************************************LAYOUT PAGE******************************************/
 /*layout/application.erb page*/
 .nav-text, .app-title {
   font-family: 'Poppins', sans-serif;
@@ -260,3 +263,6 @@ a {
   color: white;
   font-size: 14px;
 }
+
+/*Names are good and semantic.  A few are a bit long though*/
+/*Try to implement some media queries for different sized screens*/
