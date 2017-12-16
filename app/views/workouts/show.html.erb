@@ -8,7 +8,7 @@
   <div class="workout-info">
     <h1 class="workout-name"><%= @workout.name %></h1>
     <h4 class="workout-description"><%= @workout.description %></h4>
-    <h3 class="duration-level-equipment-source-category-data">
+    <h3 class="duration-level-equipment-source-category-data"> <!-- Very long class names -->
       <span class="duration-level-equipment-source-category">Duration:</span> <%= @workout.duration %> |
       <span class="duration-level-equipment-source-category">Level:</span> <%= @workout.level %> |
       <span class="duration-level-equipment-source-category">Equipment Needed:</span> <%= @workout.equipment_needed %> |
@@ -21,7 +21,7 @@
 
 <div class="workout-content-container">
   <div class="workout-content">
-    <%= simple_format(@workout.content) %>
+    <%= simple_format(@workout.content) %> <!-- this is a cool helper you've found -->
   </div>
 </div>
 

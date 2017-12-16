@@ -14,7 +14,7 @@ class CategoriesController < ApplicationController
 
   def create
     @category = Category.create(category_params.merge(user: current_user))
-    # @category = Category.create(category_params)
+    # @category = Category.create(category_params) Remove commented out code in production branch
     redirect_to category_path(@category)
   end
 
