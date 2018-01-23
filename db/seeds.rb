@@ -56,7 +56,6 @@ abs_workout_one = Workout.create(
     0:30 - Quad Rockers
     0:30 - Lower Back Stretch (Left Side)
     0:30 - Lower Back Stretch (Right Side)",
-  img_url: "http://watchfit.com/wp-content/uploads/2015/11/46986709_l.jpg",
   category: abs
 )
 
