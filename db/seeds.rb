@@ -72,40 +72,50 @@ abs_workout_two = Workout.create(
     "HEEL TAPS
     A. Lie faceup on the floor, lower back pressing into the ground, knees lifted over hips and legs at a 90-degree angle. Arms are extended overhead and press into a wall or couch behind head.
     B. Keeping legs in the same position (forming 90-degree angles), lower right heel to tap the floor and return to starting position. Then lower left heel to tap the floor and return to starting position. Continue alternating.
+
     BIRD-DOG
     A. Begin in a tabletop position on all fours.
     B. Lift and extend right leg backwards while lifting and extending left arm straight forward, biceps next to ear.
     C. Return to start, then repeat with the opposite arm and leg. Continue alternating.
+
     WALKING PLANKS
     A. Start in a high plank position.
     B. Walk feet a few steps toward hands, piking body with hips toward ceiling.
     C. Walk feet backwards to return to plank. Continue walking feet in and out.
+
     SLOW MOUNTAIN CLIMBERS
     A. Begin in high plank position.
     B. Keeping core tight and butt down, drive right knee in toward chest, then return to starting position.
     C. Drive left knee in toward chest, then return to starting position. Continue alternating.
+
     REVERSE CRUNCHES
     A. Holding onto something behind head if necessary, lie faceup on the floor with legs extended directly over hips, heels toward ceiling.
     B. Exhale and drive heels toward ceiling, lifting hips up a few inches. Slowly lower hips to return to starting position.
+
     REVERSE CRUNCHES WITH A TWIST
     A. Holding onto something behind head if necessary, lie face-up on the floor with legs extended directly over hips, heels toward ceiling.
     B. Exhale and drive heels toward ceiling, lifting hips up a few inches and twisting hips slightly to the right.
     C. Slowly lower hips to return to start, then repeat twisting in the other direction. Continue alternating.
+
     DOUBLE CRUNCHES
     A. Lie faceup on the floor, hands behind head and elbows pointing out. Legs are in 90-degree angles with knees over hips.
     B. Engage abs to lift shoulder blades off the floor and crunch knees toward chest, keeping knees at a 90-degree bend.
     C. Slowly lower back to starting position.
+
     SIT-UP V-UP
     A. Lie faceup on the floor, arms stretched overhead and legs extended.
     B. Engage core to lift legs (in a 90-degree angle) and torso until sitting upright, balancing on tailbone. Hold for 1 second at the top.
     C. Slowly lower back to starting position.
+
     KICK-OUTS
     A. Balance on tailbone with palms flat on the floor directly behind hips, elbows pointing back and shins parallel to the floor.
     B. Lean torso back and extend legs, then engage core to return to starting position.
+
     B-GIRL PLANKS
     A. Begin in a high plank position.
     B. Kick right leg through to left side of body, tapping left hand off the floor.
     C. Return to high plank, then repeat on the other side, kicking left leg through to right side of body and lifting right hand off the floor. Continue alternating.
+
     BICYCLES
     A. Lie faceup on the floor with hands behind head and elbows pointing out.
     B. Lift shoulder blades and straight legs a few inches off the floor. Drive right knee toward chest, twisting torso to touch left elbow to right knee.
@@ -356,7 +366,8 @@ abs_workout_ten = Workout.create(
     0:30 - Runner Touches (Left Leg)
     0:30 - Bottom Up Squats
 
-    CORE CONDITIONING 1:
+    CORE
+    CONDITIONING 1:
     0:30 - Plank Saws
     0:30 - Side Plank Knee Drives (Left Side)
     0:30 - Side Plank Knee Drives (Right Side)
@@ -368,7 +379,8 @@ abs_workout_ten = Workout.create(
     1:00 - Lateral Lunges (Alternating)
     1:00 - Crossback Lunges (Alternating)
 
-    CORE CONDITIONING 2:
+    CORE
+    CONDITIONING 2:
     0:40 - Boat to Low Boat
     0:30 - Plank Alternating Leg Lifts
     0:30 - Pendulum Legs
@@ -380,7 +392,8 @@ abs_workout_ten = Workout.create(
     0:30 - Side Plank Leg Lifts (Left Side)
     0:30 - Side Plank Leg Lifts (Right Side)
 
-    CORE CONDITIONING 3:
+    CORE
+    CONDITIONING 3:
     0:50 - Lateral Bear Crawl
     0:40 - Straight Leg Bicycles
     0:40 - Mountain Climbers
@@ -415,14 +428,17 @@ abs_workout_eleven = Workout.create(
   content:
     "WARM-UP:
     0:30 - Bodyweight Squats
-    0:30 - Forward Lunges (Alternating)
+    0:30 - Forward Lunges
+    (Alternating)
 
     ENDURANCE CIRCUIT:
     1:00 - Walkouts
     0:45 - Hanging Knee Tucks
     0:30 - Hip Lifts
-    0:30 - Side Plank Leg Lifts (Left Side)
-    0:30 - Side Plank Leg Lifts (Right Side)
+    0:30 - Side Plank Leg Lifts
+    (Left Side)
+    0:30 - Side Plank Leg Lifts
+    (Right Side)
     0:30 - Pendulum Legs
     1:00 - Lateral Jump Burpees
     0:30 - Rest
@@ -430,8 +446,10 @@ abs_workout_eleven = Workout.create(
     1:00 - Walkouts
     0:45 - Hanging Knee Tucks
     0:30 - Hip Lifts
-    0:30 - Side Plank Leg Lifts (Left Side)
-    0:30 - Side Plank Leg Lifts (Right Side)
+    0:30 - Side Plank Leg Lifts
+    (Left Side)
+    0:30 - Side Plank Leg Lifts
+    (Right Side)
     0:30 - Pendulum Legs
     1:00 - Lateral Jump Burpees
 
@@ -452,37 +470,51 @@ abs_workout_twelve = Workout.create(
   content:
     "WARM-UP:
     0:30 - Shoulder Gators
-    0:40 - Horse Stance Push and Pull
+    0:40 - Horse Stance Push
+    and Pull
 
     BOXING 1:
     0:20 - Boxer Bounce
-    0:30 - Left Combo 1 (Jab, Cross, Jab)
-    0:30 - Right Combo 1 (Jab, Cross, Jab)
+    0:30 - Left Combo 1
+    (Jab, Cross, Jab)
+    0:30 - Right Combo 1
+    (Jab, Cross, Jab)
     0:30 - Alternating Hooks
     0:20 - Boxer Bounce
 
     CORE 1:
-    0:35 - Torture Twists
-    0:30 - Plank Wraps (Left Side)
-    0:30 - Plank Wraps (Right Side)
-    0:35 - Torture Twists
-    0:30 - Plank Wraps (Left Side)
-    0:30 - Plank Wraps (Right Side)
+    0:35 - Torture
+    Twists
+    0:30 - Plank Wraps
+    (Left Side)
+    0:30 - Plank Wraps
+    (Right Side)
+    0:35 - Torture
+    Twists
+    0:30 - Plank Wraps
+    (Left Side)
+    0:30 - Plank Wraps
+    (Right Side)
     0:40 - Full Sit-Ups
     0:30 - Hip Lifts
 
     BOXING 2:
     0:20 - Boxer Bounce
-    0:30 - Left Combo 2 (Jab, Cross, Hook)
-    0:30 - Right Combo 2 (Jab, Cross, Hook)
-    0:30 - Horse Stance Push and Pull
+    0:30 - Left Combo 2
+    (Jab, Cross, Hook)
+    0:30 - Right Combo 2
+    (Jab, Cross, Hook)
+    0:30 - Horse Stance
+    Push and Pull
 
     CORE 2:
     0:20 - Flutter Kicks
-    0:30 - Double Leg Toe Touches
+    0:30 - Double Leg
+    Toe Touches
     0:30 - Reverse Crunch
     0:20 - Flutter Kicks
-    0:30 - Double Leg Toe Touches
+    0:30 - Double Leg
+    Toe Touches
     0:30 - Reverse Crunch
 
     FINISHER:

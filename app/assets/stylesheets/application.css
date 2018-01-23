@@ -122,6 +122,26 @@ a {
   font-weight: bold;
 }
 
+@media screen and (max-width: 480px) {
+  .workout-category-container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .category-box {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .workout-category-text {
+    font-size: 20px;
+  }
+}
+
 /*category show page*/
 .workout-name-container {
   display: flex;
@@ -152,6 +172,32 @@ a {
   color: white;
   font-size: 24;
   text-decoration: none;
+}
+
+@media screen and (max-width: 480px) {
+  .workout-name-container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .workout-name-box {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .workout-name-text-container {
+    top: 20%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .workout-name-text {
+    font-size: 12px;
+  }
 }
 
 /*workouts show page*/
@@ -204,12 +250,13 @@ a {
 .workout-content {
   border-radius: 5px;
   background-color: rgba(100, 100, 255, .8);
-  width: 50%;
+  width: 90%;
   font-family: 'Poppins', sans-serif;
   color: white;
   font-size: 14px;
   display: flex;
   justify-content: center;
+  padding: 5px;
 }
 
 .workout-entries-container {
