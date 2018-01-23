@@ -28,7 +28,7 @@ abs_workout_one = Workout.create(
   duration: "15 mins",
   level: "Beginner",
   equipment_needed: "None",
-  source: "Nike",
+  source: "Nike Training",
   description: "Core Conditioning, Lower Body Endurance. Single leg and arm movements are great for improving strength and balance. Go as far as you can with good control.",
   content:
     "WARM-UP:
@@ -36,6 +36,7 @@ abs_workout_one = Workout.create(
     0:30 - Bird Dogs (Alternating)
     0:30 - Hip Lifts
     0:30 - Bird Dogs (Alternating)
+
     CORE:
     0:30 - Boat to Low Boat
     0:30 - Plank Walk
@@ -52,6 +53,7 @@ abs_workout_one = Workout.create(
     1:00 - Bear Crawl (Forward and Back)
     0:30 - Side Plank Knee Drives (Left Side)
     0:30 - Side Plank Knee Drives (Right Side)
+
     COOL-DOWN:
     0:30 - Quad Rockers
     0:30 - Lower Back Stretch (Left Side)
@@ -112,62 +114,387 @@ abs_workout_two = Workout.create(
 )
 
 abs_workout_three = Workout.create(
-  name: "Abs Workout Three",
-  duration: "20 mins",
+  name: "Ab Burner 2.0",
+  duration: "15 mins",
+  level: "Beginner",
+  equipment_needed: "Medicine Ball",
+  source: "Nike Training",
+  description: "Core Conditioning, Lower Body Mobility. Work the front and back of your core. Keep your torso engaged and your lower back strong and still.",
+  content:
+    "WARM-UP:
+    1:00 - Hip Lifts
+    1:00 - Bird Dogs (Alternating)
+
+    CORE CONDITIONING:
+    1:00 - High Plank Arm Reaches (Alternating)
+    0:30 - Kneeling Med Ball Lifts (Left Side)
+    0:30 - Kneeling Med Ball Lifts (Right Side)
+    0:30 - Boat to Low Boat
+    1:00 - Hip Lift March (Alternating)
+    1:00 - Bear Crawl (Forward and Back)
+    0:30 - Rest
+
+    1:00 - Hip Lift March (Alternating)
+    1:00 - High Plank Arm Reaches (Alternating),
+    0:30 - Kneeling Med Ball Lifts (Left Side)
+    0:30 - Kneeling Med Ball Lifts (Right Side)
+    0:30 - Boat to Low Boat
+    1:00 - Hip Lift March (Alternating)
+    1:00 - Bear Crawl (Forward and Back)",
   category: abs
 )
 
 abs_workout_four = Workout.create(
-  name: "Abs Workout Four",
+  name: "Quick-Hit Abs",
   duration: "15 mins",
+  level: "Intermediate",
+  equipment_needed: "None",
+  source: "Nike Training",
+  description: "Abs, Core Strength.",
+  content:
+    "WARM-UP:
+    0:30 - Knee Hugs
+    0:30 - High Plank
+    0:30 - Plank Saws
+    0:40 - Hip Lifts
+    0:40 - Single Leg Raises (Left Side)
+    0:40 - Single Leg Raises (Right Side)
+    0:40 - Hip Lifts
+    0:50 - Mountain Climbers
+    0:10 - Rest
+
+    CORE 1:
+    0:30 - Straight Leg Bicycles
+    0:40 - Dead Bugs
+    0:40 - Plank Alternating Leg Lifts
+    0:30 - Straight Leg Bicycles
+    0:40 - Dead Bugs
+    0:40 - High Plank Shoulder Taps (Alternating)
+    0:20 - Rest
+
+    CORE 2:
+    0:40 - Pendulum Legs
+    0:30 - Boat to Low Boat
+    0:40 - Pendulum Legs
+    0:30 - Boat to Low Boat
+    0:30 Quad Rockers",
   category: abs
 )
 
 abs_workout_five = Workout.create(
-  name: "Abs Workout Five",
-  duration: "7 mins",
+  name: "Core Countdown",
+  duration: "16 mins",
+  level: "Intermediate",
+  equipment_needed: "None",
+  source: "Nike Training (Ben Monk)",
+  description: "Core Conditioning, Core Stability, Hip Strength, Lower Body Endurance. This workout will challenge your core while reving your metabolism. Stay controlled and keep your core tight.",
+  content:
+    "WARM-UP:
+    10 - World's Greatest Stretch (Alternating)
+    30 - Highland Jacks
+
+    CORE-CONDITIONING:
+    50 - Mountain Climbers
+    40 - Straight Leg Bicycles
+    30 - Bird Dogs (Alternating)
+    20 - Hip Lift March (Alternating)
+    16 - Crab Toe Touches
+    14 - Side Plank Knee Drives (Left Side)
+    14 - Side Plank Knee Drives (Right Side)
+    12 - Boat to Low Boat
+    10 - Plank Walk
+    0:30 - Rest
+
+    50 - Mountain Climbers
+    40 - Straight Leg Bicycles
+    30 - Bird Dogs (Alternating)
+    20 - Hip Lift March (Alternating)
+    16 - Crab Toe Touches
+    14 - Side Plank Knee Drives (Left Side)
+    14 - Side Plank Knee Drives (Right Side)
+    12 - Boat to Low Boat
+    10 - Plank Walk
+
+    COOL-DOWN:
+    10 - Quad Rockers
+    0:30 - Kneeling Quadriceps Stretch (Left Leg)
+    0:30 - Kneeling Quadriceps Stretch (Right Leg)",
   category: abs
 )
 
 abs_workout_six = Workout.create(
-  name: "Abs Workout Six",
-  duration: "15 mins",
+  name: "Waistline Slim and Trim",
+  duration: "6 mins",
+  level: "Beginner",
+  equipment_needed: "None",
+  source: "transformfitspo.com",
+  description: "Get slim and trim with this 6 minute abs workout.",
+  content:
+    "0:30 - Ab Bikes
+    0:30 - Jackknife from Flat
+    0:15 - Rest
+    0:30 - Flutter Kicks
+    0:30 - Opposite Arm and Leg
+    0:15 - Rest
+
+    0:30 - Plank Jacks
+    0:30 - Crunches
+    0:15 - Rest
+    0:30 - Leg Extensions
+    0:30 - High Plank Walk
+    0:15 - Rest
+    0:30 - Plank Reach Throughs
+    0:30 - Swimmers",
   category: abs
 )
 
 abs_workout_seven = Workout.create(
-  name: "Abs Workout Seven",
-  duration: "30 mins",
+  name: "10 Minute Abs",
+  duration: "10 mins",
+  level: "Beginner",
+  equipment_needed: "Medicine Ball",
+  source: "postris.com",
+  description: "Crush your core with this quick, stomach-shredding session.",
+  content: "
+    0:30 - Bicycle Kicks
+    0:45 - Elbow Plank
+    10 rep - Straight Leg Lifts
+    16 rep - Russian Twists
+    0:30 - Mountain Climbers
+    0:15 - Rest
+    8 rep - Superman Planks
+    0:45 - Side Plank - Left
+    8 rep - Windshield Wipers
+    0:45 - Side Plank - Right
+    0:30 - Bicycle Kicks
+    0:30 - Mountain Climbers",
   category: abs
 )
 
 abs_workout_eight = Workout.create(
-  name: "Abs Workout Eight",
+  name: "Core Killer",
   duration: "10 mins",
+  level: "Beginner",
+  equipment_needed: "None",
+  source: "fitpossiblecoach.com",
+  description: "A no-gym required workout you can do at home.",
+  content: "
+    100 - Crunches
+    20 - Bicycles
+    0:30 - Plank
+    0:15 - Right Side Plank
+    0:15 - Left Side Plank
+    15 - Sit Ups
+    30 - Scissor Kicks
+    0:30 - Plank
+    20 - Bicycles
+    30 - Leg Raises",
   category: abs
 )
 
 abs_workout_nine = Workout.create(
-  name: "Abs Workout Nine",
-  duration: "25 mins",
+  name: "Super Twist Core Series",
+  duration: "20 mins",
+  level: "Intermediate",
+  equipment_needed: "None",
+  source: "Nike Training",
+  description: "Abs, Core Conditioning. Use this core focused burner as a compliment to your workout routine. Try adding this on at the end of a cardio workout.",
+  content:
+    "WARM-UP:
+    0:30 - Hip Twisters
+    0:30 - Single Leg Raises (Left Side)
+    0:30 - Single Leg Raises (Right Side)
+    0:30 - Hip Lift March
+    0:30 - Side Lying T Stretch (Left Arm)
+    0:30 - Side Lying T Stretch (Right Arm)
+
+    CORE 1:
+    0:40 - Full Sit-Ups
+    0:40 - Torture Twists
+    0:30 - Single Leg Sit-Up (Left Leg)
+    0:30 - Sit Up Twist (Left Leg)
+    0:30 - Single Leg Sit-Up (Right Leg)
+    0:30 - Sit Up Twist (Right Leg)
+    0:20 - Flutter Kicks
+    0:20 - Double Leg Toe Touches
+    0:30 - Plank Wraps (Left Side)
+    0:30 - Plank Wraps (Right Side)
+    0:30 - Hip Lifts
+
+    CORE 2:
+    0:40 - Full Sit-Ups
+    0:40 - Torture Twists
+    0:30 - Single Leg Sit-Up (Left Leg)
+    0:30 - Sit Up Twist (Left Leg)
+    0:30 - Single Leg Sit-Up (Right Leg)
+    0:30 - Sit Up Twist (Right Leg)
+    0:20 - Flutter Kicks
+    0:20 - Double Leg Toe Touches
+    0:30 - Plank Wraps (Left Side)
+    0:30 - Plank Wraps (Right Side)
+    0:30 - Hip Lifts
+
+    STRETCH:
+    0:20 - Up Dog
+    0:20 - Down Dog
+    0:20 - Cat Cow",
   category: abs
 )
 
 abs_workout_ten = Workout.create(
-  name: "Abs Workout Ten",
-  duration: "12 mins",
+  name: "Ab and Butt 2.0",
+  duration: "30 mins",
+  level: "Beginner",
+  equipment_needed: "Moderate Dumbbells",
+  source: "Nike Training",
+  description: "Core Conditioning, Glutes, Lower Body Mobility. This one will challenge your abs and glutes with movement in all directions.",
+  content:
+    "LOWER BODY ENDURANCE 1:
+    1:00 - Hip Lift March (Alternating)
+    1:00 - Bird Dogs (Alternating)
+    0:30 - Runner Touches (Right Leg)
+    0:30 - Runner Touches (Left Leg)
+    0:30 - Bottom Up Squats
+
+    CORE CONDITIONING 1:
+    0:30 - Plank Saws
+    0:30 - Side Plank Knee Drives (Left Side)
+    0:30 - Side Plank Knee Drives (Right Side)
+    1:00 - Kneeling Dumbbell Halos (Alternating)
+
+    LOWER BODY ENDURANCE 2:
+    1:00 - Split Squats (Left Leg)
+    1:00 - Split Squats (Right Leg)
+    1:00 - Lateral Lunges (Alternating)
+    1:00 - Crossback Lunges (Alternating)
+
+    CORE CONDITIONING 2:
+    0:40 - Boat to Low Boat
+    0:30 - Plank Alternating Leg Lifts
+    0:30 - Pendulum Legs
+    1:00 - Bear Crawl (Forward and Back)
+
+    LOWER BODY ENDURANCE 3:
+    0:30 - Hip Lifts (Left Leg)
+    0:30 - Hip Lifts (Right Leg)
+    0:30 - Side Plank Leg Lifts (Left Side)
+    0:30 - Side Plank Leg Lifts (Right Side)
+
+    CORE CONDITIONING 3:
+    0:50 - Lateral Bear Crawl
+    0:40 - Straight Leg Bicycles
+    0:40 - Mountain Climbers
+    0:30 - High Side Plank (Left Side)
+    0:30 - High Side Plank (Right Side)
+
+    LOWER BODY ENDURANCE 4:
+    0:30 - Clamshells (Left Leg)
+    0:30 - Clamshells (Right Leg)
+    0:30 - Crab Reaches
+
+    COOL-DOWN:
+    0:30 - Figure Four Stretch (Left Leg)
+    0:30 - Figure Four Stretch (Right Leg)
+    0:30 - Quad Rockers
+    0:30 - Kneeling Quadriceps Stretch (Left Leg)
+    0:30 - Kneeling Quadricpes Stretch (Right Leg)
+    0:30 - Lying Hamstring Stretch (Left Leg)
+    0:30 - Lying Hamstring Stretch (Right Leg)
+    0:30 - Lower Back Stretch (Left Side)
+    0:30 - Lower Back Stretch (Right Side)",
   category: abs
 )
 
 abs_workout_eleven = Workout.create(
-  name: "Abs Workout Eleven",
-  duration: "20 mins",
+  name: "Core Burn Out",
+  duration: "15 mins",
+  level: "Intermediate",
+  equipment_needed: "Pull-Up Bar",
+  source: "Nike Training (Josh Caruthers)",
+  description: "Abs, Core Stability, Quick Burn. Push your coordination and your fitness. During the lateral burpee, go as fast as your can with total control.",
+  content:
+    "WARM-UP:
+    0:30 - Bodyweight Squats
+    0:30 - Forward Lunges (Alternating)
+
+    ENDURANCE CIRCUIT:
+    1:00 - Walkouts
+    0:45 - Hanging Knee Tucks
+    0:30 - Hip Lifts
+    0:30 - Side Plank Leg Lifts (Left Side)
+    0:30 - Side Plank Leg Lifts (Right Side)
+    0:30 - Pendulum Legs
+    1:00 - Lateral Jump Burpees
+    0:30 - Rest
+
+    1:00 - Walkouts
+    0:45 - Hanging Knee Tucks
+    0:30 - Hip Lifts
+    0:30 - Side Plank Leg Lifts (Left Side)
+    0:30 - Side Plank Leg Lifts (Right Side)
+    0:30 - Pendulum Legs
+    1:00 - Lateral Jump Burpees
+
+    COOL-DOWN:
+    0:20 - Lateral Hip Openers
+    0:20 - Dynamic Chest Stretch
+    0:20 - Quad Rockers",
   category: abs
 )
 
 abs_workout_twelve = Workout.create(
-  name: "Abs Workout Twelve",
-  duration: "15 mins",
+  name: "Boxer Core",
+  duration: "20 mins",
+  level: "Intermediate",
+  equipment_needed: "None",
+  source: "Nike Training",
+  description: "Abs, Core Strength. The secret to a powerful punch is all about generating movement from the ground up. To do this, focus on connecting your lower body to your upper body through your core.",
+  content:
+    "WARM-UP:
+    0:30 - Shoulder Gators
+    0:40 - Horse Stance Push and Pull
+
+    BOXING 1:
+    0:20 - Boxer Bounce
+    0:30 - Left Combo 1 (Jab, Cross, Jab)
+    0:30 - Right Combo 1 (Jab, Cross, Jab)
+    0:30 - Alternating Hooks
+    0:20 - Boxer Bounce
+
+    CORE 1:
+    0:35 - Torture Twists
+    0:30 - Plank Wraps (Left Side)
+    0:30 - Plank Wraps (Right Side)
+    0:35 - Torture Twists
+    0:30 - Plank Wraps (Left Side)
+    0:30 - Plank Wraps (Right Side)
+    0:40 - Full Sit-Ups
+    0:30 - Hip Lifts
+
+    BOXING 2:
+    0:20 - Boxer Bounce
+    0:30 - Left Combo 2 (Jab, Cross, Hook)
+    0:30 - Right Combo 2 (Jab, Cross, Hook)
+    0:30 - Horse Stance Push and Pull
+
+    CORE 2:
+    0:20 - Flutter Kicks
+    0:30 - Double Leg Toe Touches
+    0:30 - Reverse Crunch
+    0:20 - Flutter Kicks
+    0:30 - Double Leg Toe Touches
+    0:30 - Reverse Crunch
+
+    FINISHER:
+    0:20 - Boxer Bounce
+    0:30 - Mountain Climbers
+    0:20 - Boxer Bounce
+    0:30 - Mountain Climbers
+
+    STRETCH:
+    0:20 - Down Dog
+    0:20 - Up Dog
+    0:20 - Butterfly Stretch",
   category: abs
 )
 
